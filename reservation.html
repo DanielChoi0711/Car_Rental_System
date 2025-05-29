@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Reservation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Car Rental Logo" class="logo" onclick="window.location.href='index.html'" />
+    <h1>Reserve Your Car</h1>
+  </header>
+
+  <main class="reservation-container">
+    <section id="carDetails">
+      <!-- Display selected car information -->
+    </section>
+
+    <section class="form-section">
+      <h2>Your Information</h2>
+      <form id="reservationForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="text" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="license" placeholder="Driver's License Number" required />
+        <input type="date" id="startDate" required />
+        <input type="number" id="rentalDays" placeholder="Rental Period (days)" min="1" required />
+        <p>Total Price: $<span id="totalPrice">0</span></p>
+        <button type="submit">Submit</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+
+
+  <script src="js/reservation.js"></script>
+</body>
+</html>

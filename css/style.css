@@ -1,0 +1,314 @@
+/* Reset default styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #e51e7e;
+  color: white;
+  padding: 85px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.search-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+#searchBox {
+  width: 60%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+header .search-box button {
+  background-color: #808680; 
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+.filters select,
+.filters button {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#suggestions {
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  width: 60%;
+  display: none;
+}
+
+#suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background-color: #eee;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.car-card h3 {
+  margin: 10px 0 5px;
+}
+
+.car-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.rent-btn {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.rent-btn:hover {
+  background-color: #1565c0;
+}
+
+#suggestionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-width: 200px;
+  position: absolute;
+  background: white;
+  z-index: 10;
+}
+
+#suggestionList li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#suggestionList li:hover {
+  background-color: #eee;
+}
+
+/* Main Container */
+.reservation-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Car Information Section */
+#carDetails {
+  background-color: #eef5ff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cce0ff;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #1e90ff;
+}
+
+#reservationForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#reservationForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#reservationForm input[type="date"],
+#reservationForm input[type="number"] {
+  appearance: none;
+}
+
+#totalPrice {
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+#reservationForm p {
+  grid-column: span 2;
+  font-size: 1.1rem;
+}
+
+/* Button Style */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #1e90ff;
+  color: white;
+}
+
+#cancelBtn {
+  background-color: #ccc;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Confirmation Page Container */
+.confirmation-container {
+  margin: 50px auto 100px auto; 
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  padding: 30px 40px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 70vh; 
+}
+
+#carInfoDisplay, #reservationSummary {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.3);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#confirmLink {
+  display: inline-block;
+  margin: 20px auto 10px;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(67, 206, 162, 0.7);
+  transition: background 0.4s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+#confirmLink:hover {
+  background: linear-gradient(45deg, #185a9d, #43cea2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(24, 90, 157, 0.9);
+}
+
+#reservationStatus {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 480px) {
+  .confirmation-container {
+    padding: 25px 20px;
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  #confirmLink {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}

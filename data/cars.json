@@ -1,0 +1,82 @@
+{
+  "cars": [
+    {
+      "carType": "Sedan",
+      "brand": "Toyota",
+      "carModel": "Corolla",
+      "image": "/assets/corolla.png",
+      "yearOfManufacture": 2014,
+      "mileage": "30,000 km",
+      "fuelType": "Gasoline",
+      "available": true,
+      "pricePerDay": 50,
+      "description": "A reliable and fuel-efficient sedan perfect for daily commuting.",
+      "vin": "1HGBH41JXMN109186"
+    },
+    {
+      "carType": "SUV",
+      "brand": "Honda",
+      "carModel": "CR-V",
+      "image": "/assets/CR-V.png",
+      "yearOfManufacture": 2001,
+      "mileage": "45,000 km",
+      "fuelType": "Gasoline",
+      "available": false,
+      "pricePerDay": 70,
+      "description": "Spacious and versatile, great for family trips and outdoor adventures.",
+      "vin": "2HGFC2F60KH123456"
+    },
+    {
+      "carType": "Coupe",
+      "brand": "Ford",
+      "carModel": "Mustang",
+      "image": "/assets/Mustang.png",
+      "yearOfManufacture": 2010,
+      "mileage": "15,000 km",
+      "fuelType": "Gasoline",
+      "available": true,
+      "pricePerDay": 120,
+      "description": "A powerful and stylish coupe offering an exhilarating driving experience.",
+      "vin": "1FA6P8TH6J5134567"
+    },
+    {
+      "carType": "Sedan",
+      "brand": "Toyota",
+      "carModel": "Camry",
+      "image": "/assets/camry.png",
+      "yearOfManufacture": 2018,
+      "mileage": "20,000 km",
+      "fuelType": "Gasoline",
+      "available": true,
+      "pricePerDay": 65,
+      "description": "Comfortable midsize sedan with excellent fuel efficiency.",
+      "vin": "1HGBH41JXMN109187"
+    },
+    {
+      "carType": "SUV",
+      "brand": "Honda",
+      "carModel": "Pilot",
+      "image": "/assets/Pilot.png",
+      "yearOfManufacture": 2016,
+      "mileage": "35,000 km",
+      "fuelType": "Gasoline",
+      "available": true,
+      "pricePerDay": 80,
+      "description": "Spacious SUV perfect for families and off-road trips.",
+      "vin": "2HGFC2F60KH123457"
+    },
+    {
+      "carType": "Coupe",
+      "brand": "Ford",
+      "carModel": "Focus",
+      "image": "/assets/Focus.png",
+      "yearOfManufacture": 2019,
+      "mileage": "10,000 km",
+      "fuelType": "Gasoline",
+      "available": true,
+      "pricePerDay": 75,
+      "description": "Sporty coupe with modern features and great handling.",
+      "vin": "1FA6P8TH6J5134568"
+    }
+  ]
+}

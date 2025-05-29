@@ -1,0 +1,38 @@
+{
+  "orders": [
+    {
+      "customer": {
+        "name": "Hyungyu Choi",
+        "phoneNumber": "0411635428",
+        "email": "chk10714@gmail.com",
+        "driversLicenseNumber": "000711300915"
+      },
+      "car": {
+        "vin": "2HGFC2F60KH123457"
+      },
+      "rental": {
+        "startDate": "2025-05-26",
+        "rentalPeriod": 1,
+        "totalPrice": 80,
+        "orderDate": "2025-05-28"
+      }
+    },
+    {
+      "customer": {
+        "name": "hyungyu Choi",
+        "phoneNumber": "0411635428",
+        "email": "chk10714@gmail.com",
+        "driversLicenseNumber": "0007113070915"
+      },
+      "car": {
+        "vin": "2HGFC2F60KH123457"
+      },
+      "rental": {
+        "startDate": "2025-06-06",
+        "rentalPeriod": 5,
+        "totalPrice": 400,
+        "orderDate": "2025-05-28"
+      }
+    }
+  ]
+}

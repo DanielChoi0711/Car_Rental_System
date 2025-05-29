@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Results</title>
+</head>
+<body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="assets/logo.png" alt="Car Rental Logo" class="logo" onclick="window.location.href='index.html'" />
+      <h1>Car Rental System</h1>
+    </header>
+
+    <!-- Search + Filter -->
+    <section class="search-section">
+      <input type="text" id="searchBox" placeholder="Search by brand, type, or model..." />
+      <button type="submit" id="searchBtn1">🔍</button>
+      <div id="suggestionsList"></div>
+  <h1>Search Results</h1>
+  <div id="results">Loading...</div>
+
+  <script src="/js/searchResults.js"></script>
+</body>
+</html>

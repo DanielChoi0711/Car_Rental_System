@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Car Rental Logo" class="logo" onclick="window.location.href='index.html'" />
+    <h1>Car Rental System</h1>
+  </header>
+
+  <!-- Search + Filter -->
+  <section class="search-section">
+    <input type="text" id="searchBox" placeholder="Search by brand, type, or model..." />
+    <button type="submit" id="searchBtn1">🔍</button>
+    <ul id="suggestionList"></ul>
+
+    <div class="filters">
+      <select id="typeFilter">
+        <option value="">All Types</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Wagon">Coupe</option>
+      </select>
+
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+        <option value="Ford">Ford</option>
+        <option value="Mazda">Honda</option>
+        <option value="BMW">Toyota</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+  </section>
+
+  <!-- Car List -->
+  <section class="car-grid" id="carGrid">
+    <!-- Vehicle cards are dynamically loaded here -->
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
