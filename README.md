@@ -1,3 +1,6 @@
+<!-- HTML로 이미지 삽입 및 크기 지정 -->
+<img src="./cover.png" alt="Cover Image" width="800"/>
+
 # 🚗 Car Rental System
 
 A simple and interactive web-based car rental system built with **HTML**, **CSS**, **JavaScript (AJAX)**, and **Node.js** for backend and data persistence using **JSON**.
